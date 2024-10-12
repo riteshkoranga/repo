@@ -1,19 +1,29 @@
 #include <stdio.h>
+#include <stdbool.h>
+
+
+
+bool isEven(int num) {
+    return num % 2 == 0; 
+}
 
 int main() {
     int number;
 
- 
-    printf("Enter an integer: ");
+   
+    printf("Enter a number: ");
     scanf("%d", &number);
 
-  
-    if (number % 2 == 0) {
-        printf("%d is even.\n", number);
+ 
+   
+    if (isEven(number)) {
+        printf("%d is an even number.\n", number);
     } else {
-        printf("%d is odd.\n", number);
+        printf("%d is an odd number.\n", number);
     }
 
     return 0;
 }
 
+
+//hello this is ritesh koranga
